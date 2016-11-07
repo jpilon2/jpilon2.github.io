@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<STYLE type='text/css'>
+		h1{
+			opacity: 0;
+		}
+		#link1{
+			position: fixed;
+			color: white;
+			font-family: 'reswysokr';
+			font-size: 25px;
+			opacity: 1;
+			visibility: visible;
+			left: 50%;
+			top: 7%;
+			z-index:12;
+			text-decoration: none;
+			-webkit-transition:  top 2s ease, opacity 2s ease;
+			-moz-transition: top 2s ease, opacity 2s ease;
+			-o-transition: top 2s ease, opacity 2s ease;
+			transition: top 2s ease, opacity 2s ease;
+
+		}
+		#link1:hover{
+			color: black;
+		}
+		#link1Under{
+			position: fixed;
+			color: black;
+			font-family: 'reswysokr';
+			font-size: 25px;
+			opacity: 1;
+			left: 50%;
+			top: 7%;
+			z-index: 11;
+			text-decoration: none;
+			-webkit-transition:  top 2s ease, opacity 2s ease;
+			-moz-transition: top 2s ease, opacity 2s ease;
+			-o-transition: top 2s ease, opacity 2s ease;
+			transition: top 2s ease, opacity 2s ease;
+		}
+		#link1Under:hover{
+			color: white;
+		}
+		#link2{
+			position: fixed;
+			color: white;
+			font-family: 'reswysokr';
+			font-size: 25px;
+			opacity: 1;
+			left: 65%;
+			top: 7%;
+			z-index: 12;
+			visibility: visible;
+			text-decoration: none;
+			-webkit-transition:  top 2s ease, opacity 2s ease;
+			-moz-transition: top 2s ease, opacity 2s ease;
+			-o-transition: top 2s ease, opacity 2s ease;
+			transition: top 2s ease, opacity 2s ease;
+		}
+		#link2:hover{
+			color: black;
+		}
+		#link2Under{
+			position: fixed;
+			color: black;
+			font-family: 'reswysokr';
+			font-size: 25px;
+			opacity: 1;
+			left: 65%;
+			top: 7%;
+			z-index: 11;
+			text-decoration: none;
+			-webkit-transition:  top 2s ease, opacity 2s ease;
+			-moz-transition: top 2s ease, opacity 2s ease;
+			-o-transition: top 2s ease, opacity 2s ease;
+			transition: top 2s ease, opacity 2s ease;
+		}
+		#link2Under:hover{
+			color: white;
+		}
+		#link3{
+			position: fixed;
+			color: white;
+			font-family: 'reswysokr';
+			font-size: 25px;
+			opacity: 1;
+			left: 75%;
+			top: 7%;
+			z-index: 12;
+			visibility: visible;
+			text-decoration: none;
+			-webkit-transition:  top 2s ease, opacity 2s ease;
+			-moz-transition: top 2s ease, opacity 2s ease;
+			-o-transition: top 2s ease, opacity 2s ease;
+			transition: top 2s ease, opacity 2s ease;
+		}
+		#link3:hover{
+			color: black;
+		}
+		#link3Under{
+			position: fixed;
+			color: black;
+			font-family: 'reswysokr';
+			font-size: 25px;
+			opacity: 1;
+			left: 75%;
+			top: 7%;
+			z-index: 11;
+			text-decoration: none;
+			-webkit-transition:  top 2s ease, opacity 2s ease;
+			-moz-transition: top 2s ease, opacity 2s ease;
+			-o-transition: top 2s ease, opacity 2s ease;
+			transition: top 2s ease, opacity 2s ease;
+		}
+		#link3Under:hover{
+			color: white;
+		}
+		#link4{
+			position: fixed;
+			color: white;
+			font-family: 'reswysokr';
+			font-size: 25px;
+			opacity: 1;
+			left: 85%;
+			top: 7%;
+			z-index:12;
+			visibility: visible;
+			text-decoration: none;
+			-webkit-transition:  top 2s ease, opacity 2s ease;
+			-moz-transition: top 2s ease, opacity 2s ease;
+			-o-transition: top 2s ease, opacity 2s ease;
+			transition: top 2s ease, opacity 2s ease;
+
+		}
+		#link4:hover{
+			color: black;
+		}
+		#link4Under{
+			position: fixed;
+			color: black;
+			font-family: 'reswysokr';
+			font-size: 25px;
+			opacity: 1;
+			left: 85%;
+			top: 7%;
+			z-index: 11;
+			text-decoration: none;
+			-webkit-transition:  top 2s ease, opacity 2s ease;
+			-moz-transition: top 2s ease, opacity 2s ease;
+			-o-transition: top 2s ease, opacity 2s ease;
+			transition: top 2s ease, opacity 2s ease;
+		}
+		#link4Under:hover{
+			color: white;
+		}
+		#floatingBox{
+			height: 100px;
+			width: 100px;
+			position: fixed;
+			top: 300px;
+			left: 300px;
+			background: red;
+			opacity: 0;
+		}
+		#topbox{
+			height: 100px;
+			width: 110%;
+			left: -20px;
+			background: #53befb;
+			opacity: 1;
+			position:fixed;
+			top: 0px;
+			z-index: 10;
+			border-bottom: solid black 2px;
+			-webkit-transition:  height 2s ease, opacity 2s ease;
+			-moz-transition: height 2s ease, opacity 2s ease;
+			-o-transition: height 2s ease, opacity 2s ease;
+			transition: height 2s ease, opacity 2s ease;
+		}
+		#topbox2{
+			height: 100px;
+			width: 110%;
+			left: -20px;
+			background: #dcdcdc;
+			opacity: 1;
+			position:fixed;
+			border-bottom: solid black 2px;
+			top:0px;
+			z-index: 9;
+			-webkit-transition:  height 2s ease, opacity 2s ease;
+			-moz-transition: height 2s ease, opacity 2s ease;
+			-o-transition: height 2s ease, opacity 2s ease;
+			transition: height 2s ease, opacity 2s ease;
+		}
+		#titleWhite{
+			font-size: 320%;
+			color: white;
+			font-family: 'Inspira';
+			position: fixed;
+			top: 3.5%;
+			left: 3%;
+			z-index:12;
+			-webkit-transition:  top 2s ease, opacity 2s ease;
+			-moz-transition: top 2s ease, opacity 2s ease;
+			-o-transition: top 2s ease, opacity 2s ease;
+			transition: top 2s ease, opacity 2s ease;
+		}
+		#titleBlack{
+			font-size: 320%;
+			color: black;
+			font-family: 'Inspira';
+			position: fixed;
+			top: 3.5%;
+			left: 3%;
+			z-index:11;
+			-webkit-transition:  top 2s ease, opacity 2s ease;
+			-moz-transition: top 2s ease, opacity 2s ease;
+			-o-transition: top 2s ease, opacity 2s ease;
+			transition: top 2s ease, opacity 2s ease;
+		}
+		#gradeLevel{
+			font-size: 120px;
+			position: fixed;
+			bottom: 0%;
+			left: 0%;
+			font-family: 'Arial Black';
+			color: black;
+			opacity: 0.5;
+			z-index: 100;
+		}
+		#bottomBox{
+			position: fixed;
+			top: 95%;
+			left: 0%;
+			width: 100%;
+			height: 130px;
+			background-color: black;
+			opacity: 1;
+			z-index: 100;
+		}
+		#grade6Content{
+			position: absolute;
+			font-family: 'Arial Black';
+			top: 70%;
+			left: 50%;
+			font-size: 20px;
+			display: block;
+			width: 700px;
+			opacity: 0;
+			z-index: -2;
+		}
+		#movie1bw{
+			position: absolute;
+			width: 110%;
+			left: -0.3%;
+			z-index: 4;
+			opacity:1;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+
+		#movie1{
+			position: relative;
+			width: 110%;
+			left: -0.7%;
+			z-index: 3;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#projectTitle1{
+			position: absolute;
+			font-size: 40px;
+			color: #53befb;
+			font-family: 'andale mono';
+			margin-top: 8px;
+			left: 2%;
+			visibility: visible;
+		}
+		#projectCreator1{
+			position: absolute;
+			font-size: 20px;
+			color: #53befb;
+			font-family: 'andale mono';
+			right: 1%;
+			margin-top: 5px;
+			visibility: visible;
+		}
+		#movie2bw{
+			position: absolute;
+			width: 110%;
+			left: -0.3%;
+			z-index: 4;
+			opacity:1;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#movie2{
+			position: relative;
+			width: 110%;
+			left: -0.3%;
+			z-index: 3;
+			top: 0%;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#projectTitle2{
+			position: absolute;
+			font-size: 40px;
+			color: #53befb;
+			font-family: 'andale mono';
+			margin-top: 8px;
+			right: 2%;
+			visibility: visible;
+		}
+		#projectCreator2{
+			position: absolute;
+			font-size: 20px;
+			color: #53befb;
+			font-family: 'andale mono';
+			left: 1%;
+			margin-top: 9px;
+			visibility: visible;
+		}
+		#movie3bw{
+			position: absolute;
+			width: 110%;
+			left: -0.3%;
+			z-index: 4;
+			opacity:1;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#movie3{
+			position: relative;
+			width: 110%;
+			left: -0.3%;
+			z-index: 3;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#projectTitle3{
+			position: absolute;
+			font-size: 40px;
+			color: #53befb;
+			font-family: 'andale mono';
+			left: 2%;
+			margin-top: 10px;
+			visibility: visible;
+		}
+		#projectCreator3{
+			position: absolute;
+			font-size: 20px;
+			color: #53befb;
+			font-family: 'andale mono';
+			right: 2%;
+			margin-top: 6px;
+			visibility: visible;
+		}
+		#movie4bw{
+			position: absolute;
+			width: 110%;
+			left: -0.3%;
+			z-index: 4;
+			opacity:1;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#movie4{
+			position: relative;
+			width: 110%;
+			left: -0.3%;
+			z-index: 3;
+			top: 40%;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#projectTitle4{
+			position: absolute;
+			font-size: 40px;
+			color: #53befb;
+			font-family: 'andale mono';
+			margin-top: 8px;
+			right: 2%;
+			visibility: visible;
+		}
+		#projectCreator4{
+			position: absolute;
+			font-size: 20px;
+			color: #53befb;
+			font-family: 'andale mono';
+			left: 2%;
+			margin-top: 5px;
+			visibility: visible;
+		}
+		#movie5bw{
+			position: absolute;
+			width: 110%;
+			left: -0.3%;
+			z-index: 4;
+			opacity:1;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#movie5{
+			position: relative;
+			width: 110%;
+			left: -0.3%;
+			z-index: 3;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#projectTitle5{
+			position: absolute;
+			font-size: 40px;
+			color: #53befb;
+			font-family: 'andale mono';
+			margin-top: 8px;
+			left: 2%;
+			visibility: visible;
+		}
+		#projectCreator5{
+			position: absolute;
+			font-size: 20px;
+			color: #53befb;
+			font-family: 'andale mono';
+			right: 2%;
+			margin-top: 5px;
+			visibility: visible;
+		}
+		#movie6bw{
+			position: absolute;
+			width: 110%;
+			left: -0.3%;
+			z-index: 4;
+			opacity:1;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#movie6{
+			position: relative;
+			width: 110%;
+			left: -0.3%;
+			z-index: 3;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#projectTitle6{
+			position: absolute;
+			font-size: 40px;
+			color: #53befb;
+			font-family: 'andale mono';
+			margin-top: 8px;
+			right: 2%;
+			visibility: visible;
+		}
+		#projectCreator6{
+			position: absolute;
+			font-size: 20px;
+			color: #53befb;
+			font-family: 'andale mono';
+			left: 2%;
+			margin-top: 10px;
+			visibility: visible;
+		}
+		#movie7bw{
+			position: absolute;
+			width: 110%;
+			left: -0.3%;
+			z-index: 4;
+			opacity:1;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#movie7{
+			position: relative;
+			width: 110%;
+			left: -0.3%;
+			z-index: 3;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#projectTitle7{
+			position: absolute;
+			font-size: 40px;
+			color: #53befb;
+			font-family: 'andale mono';
+			margin-top: 8px;
+			left: 2%;
+			visibility: visible;
+		}
+		#projectCreator7{
+			position: absolute;
+			font-size: 20px;
+			color: #53befb;
+			font-family: 'andale mono';
+			right: 2%;
+			margin-top: 8px;
+			visibility: visible;
+		}
+		#movie8bw{
+			position: absolute;
+			width: 110%;
+			left: -0.3%;
+			z-index: 4;
+			opacity:1;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#movie8{
+			position: relative;
+			width: 110%;
+			left: -0.3%;
+			z-index: 3;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#projectTitle8{
+			position: absolute;
+			font-size: 40px;
+			color: #53befb;
+			font-family: 'andale mono';
+			margin-top: 8px;
+			right: 2%;
+			visibility: visible;
+		}
+		#projectCreator8{
+			position: absolute;
+			font-size: 20px;
+			color: #53befb;
+			font-family: 'andale mono';
+			left: 2%;
+			margin-top: 5px;
+			visibility: visible;
+		}
+		#movie9bw{
+			position: absolute;
+			width: 110%;
+			left: -0.3%;
+			z-index: 4;
+			opacity:1;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#movie9{
+			position: relative;
+			width: 110%;
+			left: -0.3%;
+			z-index: 3;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#projectTitle9{
+			position: absolute;
+			font-size: 40px;
+			color: #53befb;
+			font-family: 'andale mono';
+			margin-top: 8px;
+			left: 2%;
+			visibility: visible;
+		}
+		#projectCreator9{
+			position: absolute;
+			font-size: 20px;
+			color: #53befb;
+			font-family: 'andale mono';
+			right: 2%;
+			margin-top: 5px;
+			visibility: visible;
+		}
+		#movie10bw{
+			position: absolute;
+			width: 110%;
+			left: -0.3%;
+			z-index: 4;
+			opacity:1;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#movie10{
+			position: relative;
+			width: 110%;
+			left: -0.3%;
+			z-index: 3;
+			visibility: visible;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#projectTitle10{
+			position: absolute;
+			font-size: 40px;
+			color: #53befb;
+			font-family: 'andale mono';
+			margin-top: 8px;
+			right: 2%;
+			visibility: visible;
+		}
+		#projectCreator10{
+			position: absolute;
+			font-size: 20px;
+			color: #53befb;
+			font-family: 'andale mono';
+			left: 2%;
+			margin-top: 5px;
+			visibility: visible;
+		}
+		#fadebox{
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			z-index: 100;
+			left: 0px;
+			top: 0px;
+			opacity: 0;
+			background-color: white;
+			visibility: hidden;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+		}
+		#popupbox{
+			position: fixed;
+			height: 80%;
+			width: 60%;
+			z-index: 101;
+			left: 20%;
+			top: 10%;
+			opacity: 0;
+			visibility: hidden;
+			background-color: black;
+			border: 10px solid #53befb;
+			box-shadow: 10px;
+			-webkit-transition:  opacity 2s ease;
+			-moz-transition: opacity 2s ease;
+			-o-transition: opacity 2s ease;
+			transition: opacity 2s ease;
+
+		}
+	</STYLE>
+
+</HEAD>
+<BODY>
+<script src="jquery.js">//THIS IMPORTS THE JQUERY LIBRARY (NEED TO DONWLOAD FROM WEBSITE)</script> 
+<SCRIPT>
+
+		function clear(){
+			document.getElementById('movie1').style.visibility = 'hidden';
+			document.getElementById('movie1bw').style.visibility = 'hidden';
+			document.getElementById('projectTitle1').style.visibility = 'hidden';
+			document.getElementById('projectCreator1').style.visibility = 'hidden';
+		}
+
+		$(window).scroll(function() {
+			/* 	wS is the scroll position
+			   
+			   	wH is the height of your window. Note: This doesn't work unless you have <!doctype html> at the top of your html doc.
+				
+				hH is the height value of your css object. Note the dollar sign + css id turns it into a jquery object.
+
+				hT is the top position of your css object.
+			*/
+
+			var hT = $('#floatingBox').offset().top,
+				hH = $('#floatingBox').outerHeight(),
+				wH = $(window).height(),
+				wS = $(this).scrollTop();
+			
+			/* When the scroll position exceeds top position. The minus window height fires this when the object hits the bottom of the screen instead of top. This can be used to fade stuff in as it appears on the screen. */
+			
+			
+			/* THE ANIMATION DOESNT WORK FOR LINKS BECAUSE YOU CANT CLICK THE UNDER LINK. COULD WE HAVE VISIBILTY SET TO ZERO AFTER ANIMATION IS FINISHED? */
+			if(wS>300){
+				document.getElementById('topbox').style.opacity = '0';
+				document.getElementById('titleWhite').style.visibility = 'hidden';
+				document.getElementById('link1').style.visibility = 'hidden';
+				document.getElementById('link2').style.visibility = 'hidden';
+				document.getElementById('link3').style.visibility = 'hidden';
+				document.getElementById('link4').style.visibility = 'hidden';
+			
+				//minimize top bar
+				document.getElementById('topbox').style.height = '55px';
+				document.getElementById('topbox2').style.height = '55px';
+				document.getElementById('titleWhite').style.top = '0%';
+				document.getElementById('titleBlack').style.top = '0%';
+				document.getElementById('link1').style.top = '2%';
+				document.getElementById('link1Under').style.top = '2%';
+				document.getElementById('link2').style.top = '2%';
+				document.getElementById('link2Under').style.top = '2%';
+				document.getElementById('link3').style.top = '2%';
+				document.getElementById('link3Under').style.top = '2%';
+				document.getElementById('link4').style.top = '2%';
+				document.getElementById('link4Under').style.top = '2%';
+			}
+			if(wS<3)
+			{
+				document.getElementById('topbox').style.opacity = '1';
+				document.getElementById('titleWhite').style.visibility = 'visible';
+				document.getElementById('link1').style.visibility = 'visible';
+				document.getElementById('link2').style.visibility = 'visible';
+				document.getElementById('link3').style.visibility = 'visible';
+				document.getElementById('link4').style.visibility = 'visible';
+
+				//replace top bar positioning
+				document.getElementById('topbox').style.height = '100px';
+				document.getElementById('topbox2').style.height = '100px';
+				document.getElementById('titleWhite').style.top = '3.5%';
+				document.getElementById('titleBlack').style.top = '3.5%';
+				document.getElementById('link1').style.top = '6%';
+				document.getElementById('link1Under').style.top = '6%';
+				document.getElementById('link2').style.top = '6%';
+				document.getElementById('link2Under').style.top = '6%';
+				document.getElementById('link3').style.top = '6%';
+				document.getElementById('link3Under').style.top = '6%';
+				document.getElementById('link4').style.top = '6%';
+				document.getElementById('link4Under').style.top = '6%';
+
+			}
+			
+		});
+
+					
+</SCRIPT>
+<DIV id='fadebox'></DIV>
+<DIV id='popupbox'></DIV>
+<DIV id='topbox'></DIV>
+<DIV id='topbox2'></DIV>
+<FONT id='titleWhite'>MYP Design Showcase</FONT>
+<FONT id='titleBlack'>MYP Design Showcase</FONT>
+<DIV id='floatingBox'></DIV>
+
+<DIV id='link1'>Current Highlights</DIV>
+<A id='link2' href='grade6.html'>Year One</A>
+<A id='link3' href='grade7.html'>Year Two</A>
+<A id='link4' href='grade8.html'>Year Three</A>
+
+<A id='link1Under'>Current Highlights</A>
+<A id='link2Under' href='grade6.html'>Year One</A>
+<A id='link3Under' href='grade7.html'>Year Two</A>
+<A id='link4Under' href='grade6.html'>Year Three</A>
+<BR><BR><BR><BR><BR><BR>
+<IMG src='taiwanfoodbw.jpg' id='movie1bw' onmouseover="document.getElementById('movie1bw').style.opacity = '0';document.getElementById('enter1').style.opacity = '1';document.getElementById('enterBox1').style.opacity = '1';" onmouseout="document.getElementById('movie1bw').style.opacity = '1';"
+onclick="document.getElementById('fadebox').style.opacity = '0.7';document.getElementById('fadebox').style.visibility = 'visible';document.getElementById('popupbox').style.opacity = '1';document.getElementById('popupbox').style.visibility = 'visible';"
+	>
+<IMG src='taiwanfood.jpg' id='movie1'>
+<FONT id='projectTitle1'>Taiwan Popular Food</FONT>
+<P align='center' id='projectCreator1'>
+	Photoshop Brochure Project <BR>- Teresa Chang + Angel Hsu + Sophia -</P><BR><BR><BR><BR><BR>
+
+
+<a href='http://gdriv.es/a-g-e-movie' target='_blank'><IMG src='AGEbw.png' id='movie2bw' onmouseover="document.getElementById('movie2bw').style.opacity = '0';" onmouseout="document.getElementById('movie2bw').style.opacity = '1';"></A>
+<IMG src='AGE.png' id='movie2'>
+<FONT id='projectTitle2'>A.G.E.</FONT>
+<P align='center' id='projectCreator2'>
+	Movie Review Website <BR>- Esther Ho + Grace Juang + Alvin Su -</P><BR><BR><BR><BR><BR>
+
+<a href='https://www.youtube.com/watch?v=aJ_4cF-vS2Y' target='_blank'><IMG src='fitnessclub2bw.png' id='movie3bw' onmouseover="document.getElementById('movie3bw').style.opacity = '0';" onmouseout="document.getElementById('movie3bw').style.opacity = '1';"></A>
+<IMG src='fitnessclub2.png' id='movie3'>
+<FONT id='projectTitle3'>Fitness Club</FONT>
+<P align='center' id='projectCreator3'>
+	Healthy Living Website <BR>- Melody Fang + Megan Chang + Cailean Munkholm + Zack Lai -</P><BR><BR><BR><BR><BR>
+
+<a href='https://www.youtube.com/watch?v=t1JRh8BgpTs' target='_blank'><IMG src='MARCbw.png' id='movie4bw' onmouseover="document.getElementById('movie4bw').style.opacity = '0';" onmouseout="document.getElementById('movie4bw').style.opacity = '1';">
+<IMG src='MARC.png' id='movie4'>
+<FONT id='projectTitle4'>MARC World Gourmet</FONT>
+<P align='center' id='projectCreator4'>
+	Gourmet Restaurant Website <BR>- Momoko Shinogi + Ray Lin + Anastasia + Raco Hsieh -</P><BR><BR><BR><BR><BR>
+
+<a href='https://www.youtube.com/watch?v=9gHJI_ufzsc' target='_blank'><IMG src='madteacherbw.png' id='movie5bw' onmouseover="document.getElementById('movie5bw').style.opacity = '0';" onmouseout="document.getElementById('movie5bw').style.opacity = '1';"></A>
+<IMG src='madteacher.png' id='movie5'>
+<FONT id='projectTitle5'>Mad Teacher</FONT>
+<P align='center' id='projectCreator5'>
+	Time Lapse Project <BR>- Eric Shih + Julie Chen + Lauren Lin + Eason Chao-</P><BR><BR><BR><BR><BR>
+
+<a href='https://www.youtube.com/watch?v=E5Ttxu18cME' target='_blank'><IMG src='mrmanabubw.png' id='movie6bw' onmouseover="document.getElementById('movie6bw').style.opacity = '0';" onmouseout="document.getElementById('movie6bw').style.opacity = '1';">
+<IMG src='mrmanabu.png' id='movie6'>
+<FONT id='projectTitle6'>Mr. Manabu</FONT>
+<P align='center' id='projectCreator6'>
+	Camera Angle Project <BR>- Eric Shih + Eric Chen + Lauren Lin-</P><BR><BR><BR><BR><BR>
+
+<a href='https://www.youtube.com/watch?v=97iQoOzgYFY' target='_blank'><IMG src='phonethiefbw.png' id='movie7bw' onmouseover="document.getElementById('movie7bw').style.opacity = '0';" onmouseout="document.getElementById('movie7bw').style.opacity = '1';">
+<IMG src='phonethief.png' id='movie7'>
+<FONT id='projectTitle7'>The Phone Thief</FONT>
+<P align='center' id='projectCreator7'>
+	Silent Movie Project <BR>- Sandy Chang + Michelle Kao -</P><BR><BR><BR><BR><BR>
+
+<a href='https://www.youtube.com/watch?v=3VsYwtEIXJw' target='_blank'><IMG src='marathonbw.png' id='movie8bw' onmouseover="document.getElementById('movie8bw').style.opacity = '0';" onmouseout="document.getElementById('movie8bw').style.opacity = '1';">
+<IMG src='marathon.png' id='movie8'>
+<FONT id='projectTitle8'>The Marathon</FONT>
+<P align='center' id='projectCreator8'>
+	Time Lapse Project <BR>- Chloe + Claire Chung + Morgan Chen -</P><BR><BR><BR><BR><BR>
+
+<a href='https://www.youtube.com/watch?time_continue=1&v=GrWAKUi1Bu8' target='_blank'><IMG src='loveearthbw.png' id='movie9bw' onmouseover="document.getElementById('movie9bw').style.opacity = '0';" onmouseout="document.getElementById('movie9bw').style.opacity = '1';">
+<IMG src='loveearth.png' id='movie9'>
+<FONT id='projectTitle9'>#Love #Earth</FONT>
+<P align='center' id='projectCreator9'>
+	Silent Movie Project <BR>- Enya Chen + Grace Juan + Emily Hsieh + Melody Tai -</P><BR><BR><BR><BR><BR>
+
+
+<a href='https://www.youtube.com/watch?time_continue=1&v=GrWAKUi1Bu8' target='_blank'><IMG src='fitnessclubbw.png' id='movie10bw' onmouseover="document.getElementById('movie10bw').style.opacity = '0';" onmouseout="document.getElementById('movie10bw').style.opacity = '1';">
+<IMG src='fitnessclub.png' id='movie9'>
+<FONT id='projectTitle10'>Fitness Club</FONT>
+<P align='center' id='projectCreator10'>
+	Website Project <BR>- Melody Fang + Megan Chang + Cailean Munkholm + Zach -</P><BR><BR><BR><BR><BR>
+
+<FONT id='gradeLevel'>GRADE 8</FONT>
+<DIV id='bottomBox'></DIV>
+<FONT id='grade6Content'>In grade 6 students work with the apple software iMovie to create their first video productions. At the core of the class lies the design cycle. Students need to thoroughly research, plan and test their creation. They need to create storyboards and consider things such as camera angles, sound effects, audio tracks, props, costumes, script, and much more. There are two main projects in the class. The Silent movie project and the Time Lapse/Reverse video. </FONT>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+
+<H1 id='item1'>I am the H1</H1>
+	HELLO
+</BODY>
+</HTML>
